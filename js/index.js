@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Semua elemen section
     var luasSection = document.getElementById('luaspage');
     var kelilingSection = document.getElementById('kelilingpage');
+    var btnLuas = document.getElementById('btn-luas');
+    var btnKeliling = document.getElementById('btn-keliling');
 
     // Tombol Luas
     var btnLuas = document.getElementById('btn-luas');
@@ -71,6 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Tampilkan section luas, sembunyikan section keliling
         luasSection.style.display = 'flex';
         kelilingSection.style.display = 'none';
+        btnLuas.style.backgroundColor = 'green';
+        btnKeliling.style.backgroundColor = 'rgb(9, 61, 77)';
+        
     });
 
     // Tombol Keliling
@@ -79,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Tampilkan section keliling, sembunyikan section luas
         kelilingSection.style.display = 'flex';
         luasSection.style.display = 'none';
+        btnKeliling.style.backgroundColor = 'green';
+        btnLuas.style.backgroundColor = 'rgb(9, 61, 77)';
     });
     // Tampilkan section luaspage secara default saat halaman pertama kali dimuat
     luasSection.style.display = 'flex';
