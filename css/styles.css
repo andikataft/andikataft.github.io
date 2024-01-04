@@ -4,21 +4,28 @@ body {
 
 #navigation-bar {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 5px solid rgb(9, 69, 104);
-    vertical-align: middle;
+    flex-direction: column;
+    /* border-bottom: 5px solid rgb(9, 69, 104); */
+    align-items: center;
+
 }
 
 #logo {
     margin-top: 0;
+    font-size: larger;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 45%;
     cursor: pointer;
-    color: brown;
+    gap: 10px;
+}
+
+.navigation button {
+    background-color: rgb(9, 61, 77);
+    color: white;
+    font-weight: bold;
 }
 
 .navigation:hover {
